@@ -185,7 +185,8 @@ Two pictures at the bottom of the page
 */
 
 footer{
-    height:240px;
+ /*   height:240px;*/
+    padding-bottom: 43px;
     background-color: #515151;
 
 }
@@ -215,6 +216,11 @@ padding-top:71px;
 
 .GitHubFoot{
     background-color:  #C6B393;
+    
+    text-align: center;
+    padding-top: 16px;
+
+    display: inline-block;
 
 }
 
@@ -237,6 +243,6 @@ padding-top:71px;
 .MoreFootLinks{
     margin-left:125px;
     margin-top:42px;
-    margin-bottom: 43px;
     margin-right: 20px;
+ 
 }
