@@ -1,8 +1,5 @@
 
 
-a{
-    text-decoration: none;
-}
 
 *{margin: 0; padding: 0;}
 
@@ -13,6 +10,14 @@ body{
 
 header, nav, main, footer{
     display: block;
+}
+
+a{
+    text-decoration: none;
+}
+
+#wrapper{
+    margin:0px auto;
 }
 
 .logoPic {
