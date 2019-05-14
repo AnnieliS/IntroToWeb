@@ -37,9 +37,6 @@ li {
 }
 
 nav ul li:hover {
-    background-image: url(../images/Ellipse.png);
-    background-repeat: no-repeat;
-    background-position: 50%;
     opacity: 0.3;
 }
 
