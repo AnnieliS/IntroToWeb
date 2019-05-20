@@ -1,262 +1,162 @@
-
-html{
+html {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
-  overflow-y: hidden;
 }
 
-body{
-  margin:0;
-  padding-top:100px;
-  height:100vh;
-  font-family: 'Monoton', cursive;
+body {
+  margin: 0;
+  padding-top: 100px;
+  height: 100vh;
   color: #e5e5e5;
-  
-  /*font-family: 'Fredericka the Great', cursive;
-  font-family: 'Finger Paint', cursive;  overflow: hidden;*/
-
-} 
-
-html, body{
   margin: 0;
   background-color: #212027;
-  overflow: hidden;}
+  
+}
 
-#cat{
+#layout1 {
+  width: 7000px;
+}
+
+#layout1 h1 {
+  float: left;
+  position: absolute;
+  top: 25vh;
+  left: 20px;
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 58px;
+}
+
+#layout1 h2 {
+  float: left;
+  position: absolute;
+  top: 35vh;
+  left: 40px;
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 45px;
+}
+
+#layout2 .floating {
+  text-align: center;
+}
+
+#layout2 h1{
+  font-family: 'Fredericka the Great', cursive;
+}
+
+#layout2 h2{
+  font-family: 'Electrolize', sans-serif;
+
+}
+
+#layout2 h3{
+  font-family: 'Electrolize', sans-serif;
+
+}
+
+form {
+  position: absolute;
+  top: 13vh;
+  margin: 0 auto;
+  margin-left: 550px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.part {
+  float: left;
+  margin-right: 40vw;
+}
+
+.part1 {
+  float: left;
+  margin-right: 10vw;
+}
+
+.btn {
+  margin-top: 30px;
+}
+
+#cat {
   width: 500px;
   position: absolute;
+  position: fixed;
   left: 50%;
   bottom: 0px;
-  transform: translateX(-50%);}
-
-
-/*
-html,
-body {
-  width: 100%;
-  height: 100%;
-}
-body {
-  background-color: #8f8f8f;
-}
-
-.background {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 330px;
-}
-
-.background .bottom {
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: #333333;
-  z-index: 2;
-}
-
-.cat {
-  position: absolute;
-  bottom: 135px;
-  left: 50%;
   transform: translateX(-50%);
-  display: block;
-  width: 350px;
-  height: 350px;
-  border-radius: 50%;
-  background-color: #000;
-  z-index: -1;
 }
-
-.eyes {
-  display: block;
-  position: absolute;
-  top: 25%;
-  width: 100%;
-  height: 50px;
-  z-index: 1;
-}
-
-.eye {
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #000;
-  border-left: 2px solid #fff;
-  border-right: 2px solid #fff;
-  border-bottom: 4px solid #fff;
-  border-top: 0;
-}
-
-.eye::after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 8px;
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-  background-color: #fff;
-}
-
-.eye::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 20px;
-  border-radius: 50%;
-  width: 3px;
-  height: 3px;
-  background-color: #fff;
-}
-
-.left-eye {
-  left: 80px;
-  transform: rotate(20deg);
-}
-
-.left-eye::after {
-  left: 18px;
-  transform: rotate(20deg);
-}
-
-.left-eye::before {
-  top: 13px;
-  left: 32px;
-}
-
-.right-eye {
-  right: 80px;
-  transform: rotate(-20deg);
-}
-
-.right-eye::after {
-  right: 15px;
-}
-
-.right-eye::before {
-  top: 20px;
-  right: 10px;
-}
-
-.ear {
-  position: absolute;
-  top: -50px;
-  width: 150px;
-  height: 300px;
-  background-color: #000;
-}
-
-.left-ear {
-  left: 0;
-  transform: rotate(-20deg);
-  border-radius: 70% 30% 0% 0% / 100% 100% 0% 0%;
-}
-
-.right-ear {
-  right: 0;
-  transform: rotate(20deg);
-  border-radius: 30% 70% 0% 0% / 100% 100% 0% 0%;
-}
-
-.fur {
-  background-color: #000;
-}
-
-.hair {
-  position: absolute;
-  background-color: inherit;
-}
-
-.hair-1 {
-  left: 0;
-  bottom: 50%;
-  width: 20px;
-  height: 40px;
-  transform: rotate(-25deg);
-}
-
-.hair-2 {
-  left: 10px;
-  bottom: 55%;
-  width: 10px;
-  height: 40px;
-  transform: rotate(-50deg);
-}
-.hair-2::before {
-  display: block;
-  position: absolute;
-  left: 0px;
-  top: -5px;
-  content: '';
-  background-color: #8f8f8f;
-  width: 5px;
-  height: 13px;
-  transform: rotate(40deg);
-}
-
-.hair-3 {
-  right: 15px;
-  bottom: 60%;
-  width: 70px;
-  height: 70px;
-  transform: rotate(-50deg);
-  border-radius: 10px;
-  z-index: 0;
-}
-
-
-.hair-4 {
-  left: 0;
-  bottom: 50%;
-  width: 20px;
-  height: 40px;
-  transform: rotate(-25deg);
-}
-
-.hair-5 {
-  right: 10px;
-  bottom: 55%;
-  width: 10px;
-  height: 40px;
-  transform: rotate(-50deg);
-}
-
-.hair-6 {
-  right: 15px;
-  bottom: 60%;
-  width: 70px;
-  height: 70px;
-  transform: rotate(-50deg);
-  border-radius: 10px;
-  z-index: 0;
-}
-
-.hair-7 {
-  top: 0;
-  left: 50%;
-  width: 25px;
-  height: 25px;
-}
-
-
 
 /*CATWALK*/
+
 .tuna {
-    /* steps causes the animation to chunk into 12 equal pieces */
-    animation: walk-cycle 1s steps(12) infinite;
-    background: url(http://stash.rachelnabors.com/img/codepen/tuna_sprite.png) 0 0 no-repeat; 
-    height: 200px;
-    width: 400px;
-    margin: 100px auto 0;
+  /* steps causes the animation to chunk into 12 equal pieces */
+  animation: walk-cycle 1s steps(12) infinite;
+  background: url(http://stash.rachelnabors.com/img/codepen/tuna_sprite.png) 0 0 no-repeat;
+  height: 200px;
+  width: 400px;
+  margin: 100px auto 0;
+  position: absolute;
+  bottom: -20px;
+  position: fixed;
+  transform: scaleX(-1);
+}
+
+@keyframes walk-cycle {
+  0% {
+    background-position: 0 0;
   }
-  
-  @keyframes walk-cycle {  
-    0% {background-position: 0 0; } 
-    100% {background-position: 0 -2391px; } /* Must be full height of sprite or skipping will happen.*/
+  100% {
+    background-position: 0 -2391px;
   }
-  
+  /* Must be full height of sprite or skipping will happen.*/
+}
+
+/*TEXT FLOAT*/
+
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  from {
+    transform: translate(0, 0px);
+  }
+  65% {
+    transform: translate(0, 15px);
+  }
+  to {
+    transform: translate(0, -0px);
+  }
+}
+
+/*FLASHLIGHT*/
+
+#bg {
+  position: absolute;
+  position: fixed;
+  bottom: 0px;
+  width: 100vw;
+  height: 100%;
+  background-image: url("https://img.itch.zone/aW1hZ2UvMTMwMDQ5LzU5OTgzMi5wbmc=/original/c0%2Fhep.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#flashlight {
+  font-size: 24px;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  background-color: none;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  width: 300px;
+  height: 300px;
+  box-shadow: 0px 0px 110px 1px rgb(160, 196, 78), 0 0 0 9800px rgba(0, 0, 0, 0.9);
+  /*first one is glare effect :) */
+}

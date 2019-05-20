@@ -3,67 +3,196 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="includes/styles.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Finger+Paint|Fredericka+the+Great|Monoton" rel="stylesheet">
-    <title></title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="includes/styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Raleway|Electrolize&display=swap" rel="stylesheet">
+  <title></title>
 
 </head>
 
-<body>
+<body id="layout1">
 
-        <form action="form_main.php" method="GET">
-            City Name<br>
-            <input type="text" name="city1" value="Ulthar"><br>
-            River Name<br>
-            <input type="text" name="river" value="Skai"><br>
-            Settings
-            <label>Fire<input type="radio" name="setting" value="fire"><br></label>
-            <label>Ashes<input type="radio" name="setting" value="ashes"><br></label>
-            <label>Pond<input type="radio" name="setting" value="pond"><br></label>
-            
-            
-      
-      
-            
-            <input type="submit" value="submit"><br>
-      
-      
+  <div id="bg">
+    <div id="flashlight"></div>
+  </div>
+
+  <h1>
+    Make Your Own
+  </h1>
+
+  <h2>The Cats of Ulthar</h2>
 
 
+  <div class="floating">
+    <form action="form_main.php" method="GET">
 
-            <div class="tuna"></div>
-
-
-
-<!--ANIMATION
-<div class="wrapper">
-  
-        <div class="cat">
-          <span class="eyes left"></span>
-          <span class="eyes right"></span>
-          <span class="mouth"></span>
+      <div class="part">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Your Name</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" placeholder="H.P. Lovecraft" name="name"
+            value="H.P. Lovecraft">
+          <small id="emailHelp" class="form-text text-muted">Enter your name please.</small>
         </div>
-        
-        <div class="moon">
-          <div class="sphere"></div>
-          
-        </div>
-        
-        <div class="cloud-container">
-          <div class="cloud"></div>
-          <div class="cloud"></div>
-          <div class="cloud"></div>
-          <div class="cloud"></div>
-        </div>
-          
       </div>
 
-    -->
+      <div class="part">
+        <div class="form-group">
+          <label for="exampleInputEmail1">City Name</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Ulthar" name="city1"
+            value="Ulthar">
+          <small id="emailHelp" class="form-text text-muted">Enter a name of a mythical city.</small>
+        </div>
+      </div>
 
-    <script src="includes/main.js"></script>
+      <div class="part">
+        <div class="form-group">
+          <label for="exampleInputEmail1">River Name</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Skai" name="river" value="Skai">
+          <small id="emailHelp" class="form-text text-muted">Enter a name of a mythical river.</small>
+        </div>
+      </div>
+
+      <div class="part">
+          <div class="form-group">
+              <label for="exampleFormControlSelect1">Choose a Setting</label>
+              <select class="form-control" id="exampleFormControlSelect1" name="setting">
+                <option>fire</option>
+                <option>ashes</option>
+                <option>pond</option>
+              </select>
+            </div>
+      
+      </div>
+
+
+
+      <div class="part">
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Choose a sense</label>
+          <select class="form-control" id="exampleFormControlSelect1" name="Sense">
+            <option>See</option>
+            <option>Hear</option>
+            <option>Touch</option>
+            <option>Understand</option>
+          </select>
+        </div>
+      </div>
+
+
+      <div class="part">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Choose a Lovecraftian God</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="Argyptus"
+              name="god" checked>
+            <label class="form-check-label" for="exampleRadios1">
+              Argyptus
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="Cthulhu"
+              name="god">
+            <label class="form-check-label" for="exampleRadios2">
+              Cthulhu
+            </label>
+          </div>
+
+          <div class="form-check">
+
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="Vulthoom"
+              name="god">
+            <label class="form-check-label" for="exampleRadios2">
+              Vulthoom
+            </label>
+          </div>
+
+          <div class="form-check">
+
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="Yig"
+              name="god">
+            <label class="form-check-label" for="exampleRadios2">
+              Yig
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="part">
+
+        <label for="exampleInputEmail1">Choose a Lovecraftian City</label>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="city2[]" value="Meroe" id="defaultCheck1">
+          <label class="form-check-label">
+            Meroe
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="city2[]" value="Ophir" id="defaultCheck1">
+          <label class="form-check-label">
+            Ophir
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="city2[]" value="Arkham" id="defaultCheck1">
+          <label class="form-check-label">
+            Arkham
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="city2[]" value="R'lhyeh" id="defaultCheck1">
+          <label class="form-check-label">
+            R'lhyeh
+          </label>
+        </div>
+        <small id="emailHelp" class="form-text text-muted">Choose at least 1!</small>
+
+
+      </div>
+
+
+      <div class="part">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Name a Continent</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Africa" name="continent"
+            value="Africa">
+          <small id="emailHelp" class="form-text text-muted">Enter a continent.</small>
+        </div>
+      </div>
+
+
+      <div class="part1">
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Choose a verb</label>
+          <select class="form-control" id="exampleFormControlSelect1" name="speaks">
+            <option>speaks</option>
+            <option>hears</option>
+            <option>understands</option>
+            <option>feels</option>
+          </select>
+        </div>
+      </div>
+
+
+
+      <button type="submit" class="btn btn-secondary">Submit</button>
+
+  </div>
+
+
+
+
+  <div class="tuna"></div>
+
+
+  <script src="includes/main.js"></script>
 
 </body>
 
