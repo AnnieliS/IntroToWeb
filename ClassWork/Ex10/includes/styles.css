@@ -11,3 +11,39 @@ main, nav, article, aside, section, header, footer {
     padding: 0px;
     margin: 0px;
 }
+
+nav div a {
+    color: #a5a5a5;
+}
+
+nav div a:active {
+    color: #fff;
+}
+
+nav div h1 {
+    color: #fff;
+    font-size: 20px;
+}
+
+.pos-f-t {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: #cfd6da;
+    }
+    #wrapper {
+        width: 100%;
+    }
+    tr :nth-child(4), tr :nth-child(6) {
+        display: none;
+    }
+    .topN {
+        display: none;
+    }
+    .pos-f-t {
+        display: block;
+    }
+ 
+}
