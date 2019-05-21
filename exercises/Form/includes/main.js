@@ -65,7 +65,7 @@ $('.arrow').addClass('FOanime');
 }
 
 if (scrollPos<150){
-  $('arrow').removeClass('FOanime');
+  $git('arrow').removeClass('FOanime');
   $('.arrow').addClass('FIanime');
 }
 });
