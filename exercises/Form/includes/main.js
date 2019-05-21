@@ -30,10 +30,8 @@ $(document).ready(function () {
   $(window).mousemove(function (e) {
     var x1 = e.pageX;
     var x2 = $(window).scrollLeft();
-    console.log("x2 = " + x2);
     var y = e.pageY;
     var mX = x1 - x2 - fl_w / 2;
-    console.log("mX = " + mX);
     var mY = y - fl_h / 2;
     $('#flashlight').css({ top: mY + "px", left: mX + "px", cursor: "none" });
   });
@@ -54,3 +52,20 @@ var arrowBounce = function() {
 
 // run the arrowBounce function every 800ms
 setInterval(arrowBounce, 800);
+
+// Hide Arrow after Scroll
+
+window.addEventListener("scroll", function(){
+  var scrollPos = $(window).scrollLeft();
+  console.log("pos = " + scrollPos);
+if (scrollPos > 50)
+{
+$('.arrow').removeClass('FIanime');
+$('.arrow').addClass('FOanime');
+}
+
+if (scrollPos<150){
+  $('arrow').removeClass('FOanime');
+  $('.arrow').addClass('FIanime');
+}
+});

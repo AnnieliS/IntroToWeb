@@ -183,3 +183,34 @@ form {
 .lift {
   transform: translateY(14px);
 }
+
+.arrowContain{
+ position: absolute;
+ float: right;
+ right: 80px;
+ bottom: 40px;
+ transform: rotate(270deg);
+
+}
+
+.FOanime{
+animation-duration: 1s;
+animation-fill-mode: both;
+animation-name: fadeOut;
+}
+
+@keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;} 
+} 
+
+.FIanime{
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+  }
+  
+  @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;} 
+  } 
