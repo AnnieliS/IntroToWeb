@@ -85,7 +85,28 @@ form {
     justify-content: space-between;
 }
 
-.linkpic{
-    margin-top: 5vh;
+.virusPic button{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    overflow: hidden;
+    outline:none;
 }
+
+.linkpic{
+    margin-top: 10vh;
+}
+
+.content {
+    max-width: 500px;
+    padding: 30px;
+  }
+  
+  iframe {
+    width: 80%;
+    height: 250px;
+  }
+
+
+
 
