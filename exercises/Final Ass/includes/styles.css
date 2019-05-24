@@ -13,6 +13,17 @@ main, nav, article, aside, section, header, footer {
     margin: 0px;
 }
 
+
+.clear{
+    clear: both;
+}
+
+main{
+    width: 1240px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
 /*-----HEADER-----*/
 
 header {
@@ -65,5 +76,16 @@ form {
     width:60px;
 }
 
+
 /*-----MAIN-----*/
+
+.virusPic{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.linkpic{
+    margin-top: 5vh;
+}
 
