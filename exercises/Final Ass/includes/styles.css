@@ -227,12 +227,12 @@ h2{
     height: 250px;
   }
 
-  .submit_buttons{
+  #buynow .submit_buttons{
       display: flex;
       justify-content: space-between;
      }
 
-.submit_buttons button{
+#buynow .submit_buttons button{
     margin: 1vw;
 }
 
@@ -274,6 +274,7 @@ h2{
 .con button{
     justify-content: center;
     align-items: center;
+
 }
 
 /*-----FOOTER-----*/
