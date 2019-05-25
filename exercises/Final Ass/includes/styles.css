@@ -13,15 +13,27 @@ main, nav, article, aside, section, header, footer {
     margin: 0px;
 }
 
+#wrapper{
+    margin: 0px auto;
+    min-height: 100%;
+}
+
 /*-----HEADER-----*/
 
+#fixedHead{
+    position:fixed;
+    z-index: 2;
+    height:140px;
+    width:100vw;
+    background-color: #2323239a;
+}
+
+
 header {
-    position: fixed;
     width:100vw;
 }
 
 nav{
-    position:fixed;
     width: 100vw;
 }
 
@@ -65,5 +77,197 @@ form {
     width:60px;
 }
 
+/*-----NAV-----*/
+nav{
+    width: 100%;
+    height:40px;
+    position: absolute;
+    position: fixed;
+    top: 100px;
+    background-color: #cfd8dc;
+}
+
+nav a{
+    font-family: Helvetica, sans-serif;
+    color: #000;
+    width: 150px;
+    height: 40px;
+    right:27px;
+    display: block;
+    float:left;
+    position: relative;
+    padding-top: 8px;
+    text-align: center;
+}
+
+#pressed{
+    background-color: #90a4ae;
+}
+
+nav a:hover{
+    background-color: #90a4ae;
+}
+
+.fa{
+    float:left;
+    display: block;
+    position:relative;
+    top: 20px;
+    left: 211px;
+    color:#90a4ae;
+}
+
+.pressHome{
+    left: 61px;
+}
+
+.pressBrowse{
+    left:211px;
+}
+
+.pressUpload{
+    left:361px;
+}
+
+.pressSell{
+    left:511px;
+}
+
+.pressMyPage{
+    left:661px;
+}
+
+.pressHelp{
+    left:811px;
+}
+
+
+
 /*-----MAIN-----*/
+
+main{
+    padding-bottom: 40px;
+    position: relative;
+    top: 140px;
+}
+
+
+#siteSlogan{
+    background-image: url("../images/Slogan.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-color: #000;
+    position: relative;
+    top: 0px;
+    height: 480px;
+    width: 100%;
+    display: block;
+    float: left;
+    
+}
+
+h2{
+    font-family: 'Alef', sans-serif;
+    color:#d6d6d6;
+    font-size: 22px;
+    margin-left:165px;
+    margin-bottom:50px;
+}
+
+.popType{
+    position: relative;
+    left:100px;
+    top: 20px;
+}
+
+
+
+.popType a{
+    margin-left:117px;
+    height: 188px;
+    width: 155px;
+}
+
+
+.popObj{
+    position: relative;
+    left:100px;
+    top: 40px;
+
+}
+
+.popObj a{
+    margin-left:117px;
+}
+
+
+/*-----VIRUS PAGE-----*/
+
+#VirusPage #wrapper{
+    width: 700px;
+}
+
+
+
+#VirusPage .virusPic{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#VirusPage .virusPic button{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    overflow: hidden;
+    outline:none;
+}
+
+#VirusPage .linkpic{
+    margin-top: 10vh;
+}
+
+#VirusPage .content {
+    max-width: 500px;
+    padding: 30px;
+  }
+  
+  #VirusPage  iframe {
+    width: 80%;
+    height: 250px;
+  }
+
+  #VirusPage .submit_buttons{
+      display: flex;
+      justify-content: center;
+  }
+
+
+  
+
+
+
+
+
+
+
+/*-----FOOTER-----*/
+
+footer{
+    height: 40px;
+    width: 100vw;
+    position: relative;
+    background-color: #cfd8dc;
+    text-align: center;
+    bottom: 0px;
+    margin: 0px auto;
+
+}
+
+
+.clear{
+    clear: both;
+}
+
+
 
