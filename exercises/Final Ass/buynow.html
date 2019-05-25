@@ -62,7 +62,7 @@
         <!--Content-->
         <h1>Victims info</h1>
         <div class="con">
-        <form action="/buynow2.php" method="GET" id="victim_info">
+        <form action="buynow2.php" method="GET" id="victim_info">
                 <div class="form-group row">
                     <label for="inputfullname" class="col-sm-2 col-form-label">Full name</label>
                     <div class="col-sm-7">
@@ -78,13 +78,13 @@
                 <div class="form-group row">
                         <label for="textbox" class="col-sm-2 col-form-label">More Info</label>
                         <div class="col-sm-10">
-                                <textarea rows="4" cols="85" name="INFO_buynow" id="textbox" form="victim_info"  placeholder="Any info you want to use against the victim"></textarea>
+                                <textarea rows="4" cols="85" name="info" id="textbox" form="victim_info"  placeholder="Any info you want to use against the victim"></textarea>
                         </div>
                     </div>
-                    <div class="col-auto my-1">
-                            <div class="custom-control custom-checkbox mr-sm-1">
-                              <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
-                              <label class="custom-control-label" for="customControlAutosizing">Download and Send yourself <p>10% Discount</p></label>
+                    <div class='col-auto my-1'>
+                            <div class='custom-control custom-checkbox mr-sm-1'>
+                              <input type='checkbox' class='custom-control-input' name="dis" id='customControlAutosizing' value="on">
+                              <label class='custom-control-label' for='customControlAutosizing'>Download and Send yourself <p>10% Discount</p></label>
                             </div>
                           </div>
 
