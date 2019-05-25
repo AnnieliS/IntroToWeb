@@ -57,7 +57,7 @@
         </ul>
     </nav>
     <div class="clear"></div>
-    <main>
+    <main id="buynow2">
         <!--Slogan-->
         <!--Content-->
         <h1>Victims info</h1>
@@ -88,7 +88,7 @@
                 <div class='form-group row'>
                         <label for='textbox' class='col-sm-2 col-form-label'>More Info</label>
                         <div class='col-sm-10'>
-                                <textarea rows='4' cols='85' name='info' id='textbox' form='victim_info' placeholder='Any info you want to use against the victim'>".$info."</textarea>
+                                <textarea name='info' id='textbox' form='victim_info' placeholder='Any info you want to use against the victim'>".$info."</textarea>
                         </div>
                     </div>
                     <div class='col-auto my-1'>
