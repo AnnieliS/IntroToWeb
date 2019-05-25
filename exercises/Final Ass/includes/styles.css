@@ -243,7 +243,6 @@ h2{
 
 .con{
     display: flex;
-  
     flex-direction: column;
     border-radius: 5px;
     background-color: #4d4d4d;
@@ -251,7 +250,10 @@ h2{
     min-height: 50vh;
   }
 
-
+#feedback .con{
+    justify-content: center;
+    align-items:center; 
+}
 
 .col-auto{
     padding: 0;
@@ -265,8 +267,6 @@ h2{
     justify-content: center;
     align-items: center;
 }
-
-
 
 .con button{
     justify-content: center;
