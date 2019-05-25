@@ -230,15 +230,18 @@ h2{
   .submit_buttons{
       display: flex;
       justify-content: space-between;
-      flex-direction: column;
      }
 
 .submit_buttons button{
-    margin-top: 1vh;
+    margin: 1vw;
 }
 
   .con{
-
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     border-radius: 5px;
     background-color: #4d4d4d;
     padding: 20px;
@@ -276,8 +279,13 @@ footer{
 }
 
 .con h1{
-    display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.con button{
+    justify-content: center;
+    align-items: center;
 }
   
 
