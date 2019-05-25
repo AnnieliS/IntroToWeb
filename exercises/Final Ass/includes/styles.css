@@ -22,6 +22,8 @@ main{
     width: 1240px;
     margin-left: 100px;
     margin-right: 100px;
+    height: 1000px;
+    color: #e0e0e0;
 }
 
 /*-----HEADER-----*/
@@ -44,7 +46,7 @@ nav{
     position: absolute;
 }
 
-form {
+form.head{
     display: flex;
     float: left;
     position: absolute;
@@ -106,6 +108,15 @@ form {
     width: 80%;
     height: 250px;
   }
+
+  .submit_buttons{
+      display: flex;
+      justify-content: center;
+  }
+
+
+  
+
 
 
 

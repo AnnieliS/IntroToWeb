@@ -15,7 +15,7 @@
 
     <header>
         <div id="logo"></div>
-        <form>
+        <form class="head">
             <div class="form-group" id="searchBar">
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Search...">
             </div>
@@ -61,6 +61,29 @@
         <!--Slogan-->
         <div id="siteSlogan"></div>
         <!--Content-->
+        <h1>Victims info</h1>
+        <form id="victim_info">
+            <label>
+                Full Name
+                <input type="text" name="FN_buynow" value=" " placeholder="John Doe">
+                <br>
+                E-Mail
+                <input type="email" name="EMAIL_buynow" value=" "   placeholder="Email address">
+                <br>
+                More Info
+                <br>
+                <textarea rows="4" cols="40" name="INFO_buynow" form="victim_info">Any info you want to use against the victim</textarea>
+                <br>
+                <input type="checkbox" name="discount" value="discount"> download and Send yourself
+            </label>
+        </form>
+        <h3> Payment Info</h3>
+        <div class="submit_buttons d-flex align-items-stretch d-flex justify-content-between">
+            <br>
+            <button type="button" class="btn btn-secondary btn-lg" onclick="window.location.href='nextpage.html';">I Have Bitcoin</button>
+            <button type="button" class="btn btn-secondary btn-lg" onclick="window.location.href=' ';">Buy Bitcoin <br> With Paypal</button>
+            <button type="button" class="btn btn-secondary btn-lg" onclick="window.location.href=' ';">Use Paypal</button>
+        </div>
 
         <div class="clear"></div>
     </main>
