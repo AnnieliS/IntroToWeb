@@ -18,6 +18,11 @@ main, nav, article, aside, section, header, footer {
     min-height: 100%;
 }
 
+
+
+@media only screen and (min-width:1000px){
+
+
 /*-----HEADER-----*/
 
 #fixedHead {
@@ -44,7 +49,7 @@ nav {
     position: absolute;
 }
 
-form {
+form.head {
     display: flex;
     float: left;
     position: absolute;
@@ -87,7 +92,7 @@ nav {
     background-color: #cfd8dc;
 }
 
-nav a{
+nav a {
     font-family: Helvetica, sans-serif;
     color: #000;
     width: 150px;
@@ -98,6 +103,11 @@ nav a{
     position: relative;
     padding-top: 8px;
     text-align: center;
+}
+
+nav a:nth-child(8) {
+    position: absolute;
+    right: 0px;
 }
 
 #pressed {
@@ -142,8 +152,6 @@ nav .fa {
 }
 
 
-
-
 /*-----MAIN-----*/
 
 main {
@@ -152,9 +160,9 @@ main {
     top: 180px;
 }
 
-#pageH1{
+#pageH1 {
     font-size: 32px;
-    color:#d6d6d6;
+    color: #d6d6d6;
     position: relative;
     margin-left: -100px;
 }
@@ -208,13 +216,13 @@ h2 {
     width: 750px;
 }
 
-#VirusPage .virusPic {
+#VirusPage #virusPic {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-#VirusPage .virusPic button {
+#VirusPage #virusPic button {
     background-color: Transparent;
     background-repeat: no-repeat;
     border: none;
@@ -222,13 +230,17 @@ h2 {
     outline: none;
 }
 
-
-#VirusPage .virusPic img {
+#VirusPage #virusPic img {
     height: 200px;
     width: 200px;
 }
 
-#VirusPage .virusPic h3 {
+.virImg{
+    height:200px;
+    width: 200px;
+}
+
+#VirusPage #virusPic h3 {
     font-size: 26px;
     color: #d6d6d6;
     font-family: 'Alef', sans-serif;
@@ -236,7 +248,7 @@ h2 {
     text-align: left;
 }
 
-#VirusPage .virusPic h6 {
+#VirusPage #virusPic h6 {
     font-size: 14px;
     color: #fff;
     font-family: 'Alef', sans-serif;
@@ -244,12 +256,11 @@ h2 {
     text-align: left;
 }
 
-#VirusPage .ratingStars{
+#VirusPage .ratingStars {
     display: flex;
     color: #ffee58;
     margin-bottom: 40px;
 }
-
 
 #VirusPage .content {
     max-width: 500px;
@@ -266,9 +277,73 @@ h2 {
     justify-content: center;
 }
 
+.lightFlex{
+    display: flex;
+    justify-content: center;
+
+}
+
+.right{
+     margin-left:40px;
+}
 
 
+/*Show More Button*/
 
+#showMore{
+    height: 40px;
+    width: 200px;
+    background-color: #d6d6d6;
+    position: absolute;
+    margin: 20px auto;
+
+    text-align: center;
+}
+
+/*-----FORM-----*/
+
+#Checkout #wrapper {
+    margin: 0px auto;
+    width: 1000px;
+}
+
+.submit_buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.submit_buttons button {
+    margin-top: 20px;
+}
+
+.con {
+    border-radius: 5px;
+    background-color: #4d4d4d;
+    padding: 20px;
+}
+
+#victim_info label {
+    max-width: 220px;
+}
+
+#victim_info label+* {
+    flex: 1 0 220px;
+}
+
+.col-auto {
+    padding: 0;
+}
+
+#victim_info p {
+    font-weight: bold;
+}
+
+
+.clear {
+    clear: both;
+}
+
+}
 
 /*-----FOOTER-----*/
 
