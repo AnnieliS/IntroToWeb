@@ -227,7 +227,7 @@ h2{
     height: 250px;
   }
 
-  #buynow .submit_buttons{
+#buynow .submit_buttons{
       display: flex;
       justify-content: space-between;
      }
@@ -239,6 +239,10 @@ h2{
 #buynow2 .submit_buttons{
     display: flex;
     justify-content: flex-end;
+}
+
+#buynow2 .submit_buttons button{
+flex-basis: 33%;
 }
 
 .con{
