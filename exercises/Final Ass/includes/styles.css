@@ -257,6 +257,12 @@ main{
         #siteSlogan {
             display: none;
         }
+
+        #pageH1 {
+            font-size: 32px;
+            color: #d6d6d6;
+            position: relative;
+        }
         #logo {
             background-image: url('../images/Mobile_Header.png');
             background-repeat: no-repeat;

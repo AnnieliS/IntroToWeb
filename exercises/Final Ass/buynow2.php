@@ -21,9 +21,9 @@
 <header>
    
 
-        <div id="logo"></div>
+    <a id="logo" href="index.html"></a>
 
-        <form">
+        <form>
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
