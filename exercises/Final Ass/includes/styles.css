@@ -90,7 +90,7 @@ main{
         background-position-x: center;
         background-color: #000;
         position: relative;
-        top: 0px;
+        top: 15vh;
         height: 480px;
         width: 100%;
         display: block;
