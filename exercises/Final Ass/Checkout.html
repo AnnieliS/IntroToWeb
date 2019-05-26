@@ -12,105 +12,127 @@
 
 </head>
 
-<body id="Checkout">
-
-    <div id="fixedHead">
-
-        <header>
-            <div id="logo"></div>
-            <form class="head">
-                <div class="form-group" id="searchBar">
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Search...">
-                </div>
-                <div class="form-group" id="category">
-                    <select class="form-control" id="exampleFormControlSelect1">
-                        <option>Category</option>
-                        <option>Revenge</option>
-                        <option>Device Takeover</option>
-                        <option>Money Making</option>
-                    </select>
-                </div>
-
-                <button type="button" class="btn btn-secondary" id="searchButton">Search</button>
-            </form>
-
-            <div id="Links">
-                <a href="">
-                    Login
-                </a>
-
-                <a href="">
-                    Sign Up
-                </a>
-            </div>
-
-        </header>
+<body id="buynow">
 
 
 
-        <nav>
-            <i class="fa fa-caret-down fa-3x pressCart" aria-hidden="true"></i>
-            <a href="index.html"> Home</a>
-            <a href="#">Browse</a>
-            <a href="#">Upload</a>
-            <a href="#">Sell</a>
-            <a href="#">My Page</a>
-            <a href="#">Help</a>
-            <a href="#" id="pressed">Cart</a>
+        <div id="fixedHead">
 
-            <div class="clear"></div>
-        </nav>
-    </div>
-
-    <main>
-
-        <div id="wrapper">
-
-
-            <h1 id="pageH1">Victim's Info</h1>
-            <div class="con">
-                    <form action="buynow2.php" method="GET" id="victim_info">
-                            <div class="form-group row">
-                                <label for="inputfullname" class="col-sm-2 col-form-label">Full name</label>
-                                <div class="col-sm-7">
-                                    <input type="text" class="form-control" id="inputfullname" name="fullname" placeholder="Full name" required>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                                <div class="col-sm-7">
-                                    <input type="email" class="form-control" id="inputEmail3" name="email" placeholder="Email" required>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                    <label for="textbox" class="col-sm-2 col-form-label">More Info</label>
-                                    <div class="col-sm-10">
-                                            <textarea rows="4" cols="85" name="info" id="textbox" form="victim_info"  placeholder="Any info you want to use against the victim"></textarea>
+                <header>
+                   
+            
+                        <div id="logo"></div>
+            
+                        <form">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group" id="searchBar">
+                                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="Search...">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group" id="category">
+                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                <option>Category</option>
+                                                <option>Revenge</option>
+                                                <option>Device Takeover</option>
+                                                <option>Money Making</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group" id="category">
+                                            <button type="button" class="btn btn-secondary" id="searchButton">Search</button>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class='col-auto my-1'>
-                                        <div class='custom-control custom-checkbox mr-sm-1'>
-                                          <input type='checkbox' class='custom-control-input' name="dis" id='customControlAutosizing' value="on">
-                                          <label class='custom-control-label' for='customControlAutosizing'>Download and Send yourself <p>10% Discount</p></label>
-                                        </div>
-                                      </div>
+                            </div>
+                            </form>
+                </header>
+                <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                    <a class="navbar-brand navIMG" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Home </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="RevengePage.html">Browse</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Upload</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sell</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">My Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Help</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Cart</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                </div>
             
-                    </form>
-                    <h3> Payment Info</h3>
-                    <div class="submit_buttons ">
-                        <br>
-                        <button type="submit" form="victim_info" value="submit" class="btn btn-secondary btn-lg" >I Have Bitcoin</button>
-                        <button type="submit" form="victim_info" value="submit" class="btn btn-secondary btn-lg" >Buy Bitcoin <br> With Paypal</button>
-                        <button type="submit" form="victim_info" value="submit" class="btn btn-secondary btn-lg" >Use Paypal</button>
-                    </div>
-                    </div>
-                    <div class="clear"></div>
-    </main>
 
-
-
-
-    </div>
+            <div id="wrapper">
+                <main>
+                        <!--Slogan-->
+                        <!--Content-->
+                        <h1 id="pageH1">Victims info</h1>
+                        <div class="con">
+                        <form action="buynow2.php" method="GET" id="victim_info">
+                                <div class="form-group row">
+                                    <label for="inputfullname" class="col-sm-2 col-form-label">Full name</label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="inputfullname" name="fullname" placeholder="Full name" required>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                                    <div class="col-sm-7">
+                                        <input type="email" class="form-control" id="inputEmail3" name="email" placeholder="Email" required>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                        <label for="textbox" class="col-sm-2 col-form-label">More Info</label>
+                                        <div class="col-sm-7">
+                                                <textarea  name="info" rows="5" id="textbox" form="victim_info"  placeholder="Any info you want to use against the victim"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class='col-auto my-1'>
+                                            <div class='custom-control custom-checkbox mr-sm-1'>
+                                              <input type='checkbox' class='custom-control-input' name="dis" id='customControlAutosizing' value="on">
+                                              <label class='custom-control-label' for='customControlAutosizing'>Download and Send yourself <p>10% Discount</p></label>
+                                            </div>
+                                          </div>
+                
+                        </form>
+                        <h3> Payment Info</h3>
+                        <div class="submit_buttons ">
+                            <br>
+                            <button type="submit" form="victim_info" value="submit" class="btn btn-secondary btn-lg btn-block" >I Have Bitcoin</button>
+                            <button type="submit" form="victim_info" value="submit" class="btn btn-secondary btn-lg btn-block" >Buy Bitcoin <br> With Paypal</button>
+                            <button type="submit" form="victim_info" value="submit" class="btn btn-secondary btn-lg btn-block" >Use Paypal</button>
+                        </div>
+                        </div>
+                        <div class="clear"></div>
+                    </main>
+                </div>
 
     <!--
 

@@ -2,6 +2,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
     background-color: #232323;
+    overflow-x: hidden;
 }
 
 main, nav, article, aside, section, header, footer {
@@ -13,350 +14,385 @@ main, nav, article, aside, section, header, footer {
     margin: 0px;
 }
 
+main{
+    width: 86.11111111111111%;
+    margin-left: 6.944444444444445%;
+    margin-right: 6.944444444444445%;
+    height: 100%;
+}
+
 #wrapper {
     margin: 0px auto;
     min-height: 100%;
 }
 
-
-
-@media only screen and (min-width:1000px){
-
-
-/*-----HEADER-----*/
-
-#fixedHead {
-    position: fixed;
-    z-index: 2;
-    height: 140px;
-    width: 100vw;
-    background-color: #2323239a;
-}
-
-header {
-    width: 100vw;
-}
-
-nav {
-    width: 100vw;
-}
-
-#logo {
-    background-image: url("../images/site_logo.png");
-    height: 100px;
-    width: 190px;
-    float: left;
-    position: absolute;
-}
-
-form.head {
-    display: flex;
-    float: left;
-    position: absolute;
-    left: 200px;
-    top: 40px;
-    width: 76.67vw;
-    justify-content: center;
-    justify-content: space-around;
-}
-
-#searchBar {
-    flex-basis: 64.78%;
-}
-
-#category {
-    flex-basis: 9.67%;
-}
-
-#searchButton {
-    flex-basis: 20.65%;
-    height: 38px;
-}
-
-#Links {
-    float: left;
-    position: absolute;
-    left: 92.58%;
-    top: 40px;
-    width: 60px;
-}
-
-/*-----NAV-----*/
-
-nav {
-    width: 100%;
-    height: 40px;
-    position: absolute;
-    position: fixed;
-    top: 100px;
-    background-color: #cfd8dc;
-}
-
-nav a {
-    font-family: Helvetica, sans-serif;
-    color: #000;
-    width: 150px;
-    height: 40px;
-    right: 27px;
-    display: block;
-    float: left;
-    position: relative;
-    padding-top: 8px;
-    text-align: center;
-}
-
-nav a:nth-child(8) {
-    position: absolute;
-    right: 0px;
-}
-
-#pressed {
-    background-color: #90a4ae;
-}
-
-nav a:hover {
-    background-color: #90a4ae;
-}
-
-nav .fa {
-    float: left;
-    display: block;
-    position: relative;
-    top: 20px;
-    left: 211px;
-    color: #90a4ae;
-}
-
-.pressHome {
-    left: 61px;
-}
-
-.pressBrowse {
-    left: 211px;
-}
-
-.pressUpload {
-    left: 361px;
-}
-
-.pressSell {
-    left: 511px;
-}
-
-.pressMyPage {
-    left: 661px;
-}
-
-.pressHelp {
-    left: 811px;
-}
-
-
-/*-----MAIN-----*/
-
-main {
-    padding-bottom: 40px;
-    position: relative;
-    top: 180px;
-}
-
-#pageH1 {
-    font-size: 32px;
-    color: #d6d6d6;
-    position: relative;
-    margin-left: -100px;
-}
-
-#siteSlogan {
-    background-image: url("../images/Slogan.png");
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-color: #000;
-    position: relative;
-    top: 0px;
-    height: 480px;
-    width: 100%;
-    display: block;
-    float: left;
-}
-
-h2 {
-    font-family: 'Alef', sans-serif;
-    color: #d6d6d6;
-    font-size: 22px;
-    margin-left: 165px;
-    margin-bottom: 50px;
-}
-
-.popType {
-    position: relative;
-    left: 100px;
-    top: 20px;
-}
-
-.popType a {
-    margin-left: 117px;
-    height: 188px;
-    width: 155px;
-}
-
-.popObj {
-    position: relative;
-    left: 100px;
-    top: 40px;
-}
-
-.popObj a {
-    margin-left: 117px;
-}
-
-/*-----VIRUS PAGE-----*/
-
-#VirusPage #wrapper {
-    width: 750px;
-}
-
-#VirusPage #virusPic {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-#VirusPage #virusPic button {
-    background-color: Transparent;
-    background-repeat: no-repeat;
-    border: none;
-    overflow: hidden;
-    outline: none;
-}
-
-#VirusPage #virusPic img {
-    height: 200px;
-    width: 200px;
-}
-
-.virImg{
-    height:200px;
-    width: 200px;
-}
-
-#VirusPage #virusPic h3 {
-    font-size: 26px;
-    color: #d6d6d6;
-    font-family: 'Alef', sans-serif;
-    margin-bottom: 0px;
-    text-align: left;
-}
-
-#VirusPage #virusPic h6 {
-    font-size: 14px;
-    color: #fff;
-    font-family: 'Alef', sans-serif;
-    margin-bottom: 0px;
-    text-align: left;
-}
-
-#VirusPage .ratingStars {
-    display: flex;
-    color: #ffee58;
-    margin-bottom: 40px;
-}
-
-#VirusPage .content {
-    max-width: 500px;
-    padding: 30px;
-}
-
-#VirusPage iframe {
-    width: 80%;
-    height: 250px;
-}
-
-#VirusPage .submit_buttons {
-    display: flex;
-    justify-content: center;
-}
-
-.lightFlex{
-    display: flex;
-    justify-content: center;
+@media only screen and (min-width:1000px) {
+    /*-----HEADER-----*/
+    header {
+        position: fixed;
+        width: 100vw;
+    }
+    #fixedHead {
+        position: fixed;
+        z-index: 3;
+        height: 140px;
+        width: 100vw;
+        background-color: #00000091;
+    }
+    .navbar {
+        position: fixed;
+        z-index: 12;
+    }
+    .container {
+        margin-top: 4vh;
+        margin-right: 2vw;
+    }
+    #logo {
+        background-image: url("../images/site_logo.png");
+        height: 100px;
+        width: 190px;
+        top: 0px;
+        left: 0px;
+        position: absolute;
+        float: left;
+    }
+    /*-----NAV-----*/
+    nav {
+        width: 100vw;
+        position: absolute;
+        top: 140px;
+        font-family: Helvetica, sans-serif;
+        text-align: center;
+        justify-content: center;
+    }
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+    /*-----MAIN-----*/
+    main {
+        padding-bottom: 40px;
+        position: relative;
+        top: 25vh;
+    }
+    #textbox {
+        width: 100%;
+        border-radius: 5px;
+    }
+    #pageH1 {
+        font-size: 32px;
+        color: #d6d6d6;
+        position: relative;
+    }
+    #siteSlogan {
+        background-image: url("../images/Slogan.png");
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-color: #000;
+        position: relative;
+        top: 0px;
+        height: 480px;
+        width: 100%;
+        display: block;
+        float: left;
+    }
+    h2 {
+        font-family: 'Alef', sans-serif;
+        color: #d6d6d6;
+        font-size: 22px;
+        margin-left: 165px;
+        margin-bottom: 50px;
+    }
+    .popType {
+        position: relative;
+        left: 100px;
+        top: 20px;
+    }
+    .popType a {
+        margin-left: 4vw;
+    }
+    .popObj {
+        position: relative;
+        left: 100px;
+        top: 40px;
+    }
+    .popObj a {
+        margin-left: 4vw;
+    }
+    /*-----VIRUS PAGE-----*/
+    #VirusPage #wrapper {
+        width: 750px;
+    }
+    #VirusPage #virusPic {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #VirusPage #virusPic button {
+        background-color: Transparent;
+        background-repeat: no-repeat;
+        border: none;
+        overflow: hidden;
+        outline: none;
+    }
+    #VirusPage #virusPic img {
+        height: 200px;
+        width: 200px;
+    }
+    .virImg {
+        height: 200px;
+        width: 200px;
+    }
+    #VirusPage #virusPic h3 {
+        font-size: 26px;
+        color: #d6d6d6;
+        font-family: 'Alef', sans-serif;
+        margin-bottom: 0px;
+        text-align: left;
+    }
+    #VirusPage #virusPic h6 {
+        font-size: 14px;
+        color: #fff;
+        font-family: 'Alef', sans-serif;
+        margin-bottom: 0px;
+        text-align: left;
+    }
+    #VirusPage .ratingStars {
+        display: flex;
+        color: #ffee58;
+        margin-bottom: 40px;
+    }
+    #VirusPage .content {
+        max-width: 500px;
+        padding: 30px;
+    }
+    #VirusPage iframe {
+        width: 80%;
+        height: 250px;
+    }
+    #VirusPage .submit_buttons {
+        display: flex;
+        justify-content: center;
+    }
+    .lightFlex {
+        display: flex;
+        justify-content: center;
+    }
+    .right {
+        margin-left: 40px;
+    }
+    /*Show More Button*/
+    #showMore {
+        height: 40px;
+        width: 200px;
+        background-color: #d6d6d6;
+        position: absolute;
+        margin: 20px auto;
+        text-align: center;
+    }
+    /*-----FORM-----*/
+    #buynow #wrapper {
+        width: 85vw;
+    }
+    #buynow .submit_buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+    #buynow .submit_buttons button {
+        margin: 1vw;
+    }
+    #buynow2 .submit_buttons {
+        display: flex;
+        justify-content: flex-end;
+    }
+    #buynow2 .submit_buttons button {
+        flex-basis: 33%;
+    }
+    .con {
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        background-color: #4d4d4d;
+        padding: 20px;
+        min-height: 50vh;
+    }
+    #feedback .con {
+        justify-content: center;
+        align-items: center;
+    }
+    .col-auto {
+        padding: 0;
+    }
+    #victim_info p {
+        font-weight: bold;
+    }
+    .con h1 {
+        justify-content: center;
+        align-items: center;
+    }
+    .con button {
+        justify-content: center;
+        align-items: center;
+    }
+    .col-sm-10 {
+        width: 75%;
+    }
+    /*-----FOOTER-----*/
+    footer {
+        height: 40px;
+        width: 100vw;
+        position: relative;
+        background-color: #cfd8dc;
+        text-align: center;
+        bottom: 0px;
+        margin: 0px auto;
+    }
+    .clear {
+        clear: both;
+    }
 
 }
-
-.right{
-     margin-left:40px;
-}
-
-
-/*Show More Button*/
-
-#showMore{
-    height: 40px;
-    width: 200px;
-    background-color: #d6d6d6;
-    position: absolute;
-    margin: 20px auto;
-
-    text-align: center;
-}
-
-/*-----FORM-----*/
-
-#Checkout #wrapper {
-    margin: 0px auto;
-    width: 1000px;
-}
-
-.submit_buttons {
-    display: flex;
-    justify-content: space-around;
-}
-
-.submit_buttons button {
-    margin-top: 20px;
-}
-
-.con {
-    border-radius: 5px;
-    background-color: #4d4d4d;
-    padding: 20px;
-}
-
-#victim_info label {
-    max-width: 220px;
-}
-
-#victim_info label+* {
-    flex: 1 0 220px;
-}
-
-.col-auto {
-    padding: 0;
-}
-
-#victim_info p {
-    font-weight: bold;
-}
-
-
-.clear {
-    clear: both;
-}
-
-}
-
-/*-----FOOTER-----*/
-
-footer {
-    height: 40px;
-    width: 100vw;
-    position: relative;
-    background-color: #cfd8dc;
-    text-align: center;
-    bottom: 0px;
-    margin: 0px auto;
-}
-
-.clear {
-    clear: both;
-}
+    /*-----MOBILE-----*/
+    @media screen and (max-width: 999px) {
+        #siteSlogan {
+            display: none;
+        }
+        #logo {
+            background-image: url('../images/Mobile_Header.png');
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 202px;
+            background-color: #000;
+        }
+        .popObj {
+            left: 0px;
+        }
+        .popType {
+            left: 0px;
+        }
+        .popContain {
+            padding-top: 20vh;
+        }
+        footer {
+            display: none;
+        }
+        #VirusPage #virusPic {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        #VirusPage #virusPic button {
+            background-color: Transparent;
+            background-repeat: no-repeat;
+            border: none;
+            overflow: hidden;
+            outline: none;
+        }
+        #VirusPage #virusPic img {
+            height: 200px;
+            width: 200px;
+        }
+        .virImg {
+            height: 200px;
+            width: 200px;
+        }
+        #VirusPage #virusPic h3 {
+            font-size: 26px;
+            color: #d6d6d6;
+            font-family: 'Alef', sans-serif;
+            margin-bottom: 0px;
+            text-align: left;
+        }
+        #VirusPage #virusPic h6 {
+            font-size: 14px;
+            color: #fff;
+            font-family: 'Alef', sans-serif;
+            margin-bottom: 0px;
+            text-align: left;
+        }
+        #VirusPage .ratingStars {
+            display: flex;
+            color: #ffee58;
+            margin-bottom: 40px;
+        }
+        #VirusPage .content {
+            max-width: 500px;
+            padding: 30px;
+        }
+        #VirusPage iframe {
+            width: 80%;
+            height: 250px;
+        }
+        #VirusPage .submit_buttons {
+            display: flex;
+            justify-content: center;
+        }
+        .lightFlex {
+            display: flex;
+            justify-content: center;
+        }
+        .right {
+            margin-left: 40px;
+        }
+        /*Show More Button*/
+        #showMore {
+            height: 40px;
+            width: 200px;
+            background-color: #d6d6d6;
+            position: absolute;
+            margin: 20px auto;
+            text-align: center;
+        }
+        /*-----FORM-----*/
+        #buynow #wrapper {
+            width: 85vw;
+        }
+        
+        #textbox {
+            width: 100%;
+            border-radius: 5px;
+        }
+        #buynow .submit_buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+        #buynow .submit_buttons button {
+            margin: 1vw;
+        }
+        #buynow2 .submit_buttons {
+            display: flex;
+            justify-content: flex-end;
+        }
+        #buynow2 .submit_buttons button {
+            flex-basis: 33%;
+        }
+        .con {
+            display: flex;
+            flex-direction: column;
+            border-radius: 5px;
+            background-color: #4d4d4d;
+            padding: 20px;
+            min-height: 50vh;
+        }
+        #feedback .con {
+            justify-content: center;
+            align-items: center;
+        }
+        .col-auto {
+            padding: 0;
+        }
+        #victim_info p {
+            font-weight: bold;
+        }
+        .con h1 {
+            justify-content: center;
+            align-items: center;
+        }
+        .con button {
+            justify-content: center;
+            align-items: center;
+        }
+        .col-sm-10 {
+            width: 75%;
+        }
+    }
