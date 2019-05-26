@@ -2,6 +2,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
     background-color: #232323;
+    overflow-x: hidden;
 }
 
 main, nav, article, aside, section, header, footer {
@@ -33,19 +34,39 @@ header {
     width:100vw;
 }
 
-nav{
-    position:fixed;
+
+#fixedHead {
+    position: fixed;
+    z-index: 3;
+    height: 140px;
     width: 100vw;
+    background-color: #00000069;
 }
 
-#logo {
+.navbar{
+    position: fixed;
+    z-index: 12;
+}
+
+
+.container{
+    margin-top: 4vh;
+    margin-right: 2vw;
+}
+
+
+#logo{
     background-image: url("../images/site_logo.png");
     height: 100px;
     width: 190px;
-    float: left;
+    top: 0px;
+    left: 0px;
     position: absolute;
+    float: left;
+
 }
 
+/*
 form.head{
     display: flex;
     float: left;
@@ -80,6 +101,25 @@ form.head{
 
 /*-----NAV-----*/
 nav{
+    width: 100vw;
+    position: absolute;
+    top: 140px;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    justify-content: center;
+
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/*
+nav{
     width: 100%;
     height:40px;
     position: absolute;
@@ -100,6 +140,8 @@ nav a{
     padding-top: 8px;
     text-align: center;
 }
+
+/*
 
 #pressed{
     background-color: #90a4ae;
@@ -150,6 +192,15 @@ main{
     top: 140px;
 }
 
+#siteSlogan{
+    background: #000000;
+}
+
+#textbox {
+    width: 100%;
+    border-radius: 5px;
+}
+
 
 #siteSlogan{
     background-image: url("../images/Slogan.png");
@@ -173,30 +224,32 @@ h2{
     margin-bottom:50px;
 }
 
-.popType{
+.popType {
     position: relative;
-    left:100px;
+    left: 100px;
     top: 20px;
 }
 
+.popType a {
+    margin-left: 4vw;
 
-
-.popType a{
-    margin-left:117px;
-    height: 188px;
-    width: 155px;
 }
 
-
-.popObj{
+.popObj {
     position: relative;
-    left:100px;
+    left: 100px;
     top: 40px;
+}
+
+.popObj a {
+    margin-left: 4vw;
 
 }
 
-.popObj a{
-    margin-left:117px;
+
+
+#buynow h1{
+    margin-top: 5vh;
 }
 
 .virusPic{
@@ -299,7 +352,41 @@ footer{
 }
 
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 900px){
+#siteSlogan{
+    display: none;
+}
+
+#logo{
+    background-image: url('../images/Mobile_Header.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 202px;
+    background-color: #000;
+
+}
+
+
+.container{
+    margin-top: 202px;
+}
+
+
+.popObj{
+    left: 0px;
+}
+
+.popType{
+    left: 0px;
+}
+
+.popContain{
+    padding-top:20vh;
+}
+
+footer{
+    display: none;
+}
 
 }
 
