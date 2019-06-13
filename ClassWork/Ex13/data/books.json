@@ -1,0 +1,23 @@
+{
+"category": "Books",
+"products": [
+{
+"id": "123",
+"name": "Cinderella",
+"price": 16.65,
+"image": "https://pbs.twimg.com/profile_images/609091945894428672/IjImbLN1_400x400.jpg"
+},
+{
+"id": "456",
+"name": "Snow White",
+"price": 7.03,
+"image": "https://pbs.twimg.com/profile_images/598123888380358656/DSNvpr5__400x400.jpg"
+},
+{
+"id": "789",
+"name": "Mickey Mouse",
+"price": 9.23,
+"image": "https://static.myfigurecollection.net/pics/figure/big/363850.jpg"
+}
+]
+}
