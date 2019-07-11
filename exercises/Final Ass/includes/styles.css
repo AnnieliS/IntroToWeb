@@ -37,7 +37,7 @@ main{
         z-index: 3;
         height: 140px;
         width: 100vw;
-        background-color: #00000091;
+        background-color: #000000;
     }
     .navbar {
         position: fixed;
