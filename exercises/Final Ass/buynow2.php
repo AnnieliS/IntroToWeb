@@ -21,8 +21,14 @@
 
     <div class="clear"></div>
     <main>
-        <!--Slogan-->
-        <!--Content-->
+        <!-- Breadcrumbs -->
+
+        <!-- Main info -->
+
+
+    <!-- Breadcrumbs -->
+
+
         <h1 id="pageH1">Victims info</h1>
         <div class="con">
             <?php
@@ -35,37 +41,43 @@
                 $ck = "checked";
             else $ck = "unchecked";
             echo "<form id='victim_info'>
+            <fieldset disabled>
                 <div class='form-group row'>
                     <label for='inputfullname' class='col-sm-2 col-form-label'>Full name</label>
                     <div class='col-sm-7'>
-                        <input type='text' class='form-control' id='inputfullname' placeholder='Full name' value=' " . $name . " '>
+                        <input type='text' class='form-control' id='disabledinputfullnamedisabled' placeholder='Full name' value=' " . $name . " '>
                     </div>
                 </div>
                 <div class='form-group row'>
                     <label for='inputEmail3' class='col-sm-2 col-form-label'>Email</label>
                     <div class='col-sm-7'>
-                        <input type='email' class='form-control' id='inputEmail3' placeholder='Email' value=' " . $email . " '>
+                        <input type='email' class='form-control' id='disabledinputEmail3disabled' placeholder='Email' value=' " . $email . " '>
                     </div>
                 </div>
                 <div class='form-group row'>
                         <label for='textbox' class='col-sm-2 col-form-label'>More Info</label>
                         <div class='col-sm-7'>
-                                <textarea rows='5' cols='85' name='info' id='textbox' form='victim_info' placeholder='Any info you want to use against the victim'>" . $info . "</textarea>
+                                <textarea rows='5' cols='85' name='info' id='disabledtextbox' form='victim_info' placeholder='Any info you want to use against the victim'>" . $info . "</textarea>
                         </div>
                     </div>
                     <div class='col-auto my-1'>
                             <div class='custom-control custom-checkbox mr-sm-1'>
-                              <input type='checkbox' class='custom-control-input' id='customControlAutosizing' " . $ck . ">
+                              <input type='checkbox' class='custom-control-input' id='customControlAutosizing customCheckDisabled1' " . $ck . ">
                               <label class='custom-control-label' for='customControlAutosizing'>Download and Send yourself <p>10% Discount</p></label>
                             </div>
                           </div>
+                          </fieldset>
         </form>";
             ?>
             <h3> Payment Info</h3>
             <h3>Total: 0.07 Bitcoin</h3>
             <div class="submit_buttons ">
                 <br>
-                <button type="button" class="btn btn-secondary btn-lg" onclick="window.location.href='feedback.html';">Buy Now</button>
+
+                <!-- ADD SESSION SO WONT DELET DATA ENTERED! -->
+
+                <button type="button" class="btn btn-secondary btn-lg" onclick="window.location.href='Checkout.php';">Back</button>
+                <button type="button" class="btn btn-secondary btn-lg" onclick="window.location.href='feedback.php';">Buy Now</button>
             </div>
         </div>
         <div class="clear"></div>

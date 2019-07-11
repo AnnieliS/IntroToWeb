@@ -2,8 +2,8 @@
 
     <header>
 
-<!-- Logo -->
-        <a id="logo" href="index.html"></a>
+        <!-- Logo -->
+        <a id="logo" href="index.php"></a>
 
         <!-- Search Bar -->
         <form>
@@ -34,7 +34,7 @@
         </form>
     </header>
 
-<!-- Navbar -->
+    <!-- Navbar -->
 
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
         <a class="navbar-brand navIMG" href="#"></a>
@@ -55,8 +55,12 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Sell</a>
                 </li>
+
+
+    <!-- REMEMBER TO SWITCH BACK!!!! -->
+
                 <li class="nav-item">
-                    <a class="nav-link" href="#">My Page</a>
+                    <a class="nav-link" href="admin.php">My Page</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Help</a>

@@ -14,7 +14,7 @@ main, nav, article, aside, section, header, footer {
     margin: 0px;
 }
 
-main{
+main {
     width: 86.11111111111111%;
     margin-left: 6.944444444444445%;
     margin-right: 6.944444444444445%;
@@ -190,9 +190,255 @@ main{
         margin: 20px auto;
         text-align: center;
     }
+    /*-----BUY NOW PAGE-----*/
+    #buynow #wrapper {
+        width: 85vw;
+    }
+    #buynow .submit_buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+    #buynow .submit_buttons button {
+        margin: 1vw;
+    }
+    #buynow2 .submit_buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+    #buynow2 .submit_buttons button {
+        flex-basis: 33%;
+    }
+    .con {
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        background-color: #4d4d4d;
+        padding: 20px;
+        min-height: 50vh;
+    }
+    #feedback .con {
+        justify-content: center;
+        align-items: center;
+    }
+    .col-auto {
+        padding: 0;
+    }
+    #victim_info p {
+        font-weight: bold;
+    }
+    .con h1 {
+        justify-content: center;
+        align-items: center;
+    }
+    .con button {
+        justify-content: center;
+        align-items: center;
+    }
+    .col-sm-10 {
+        width: 75%;
+    }
+    /*-----ADMIN PAGE-----*/
+    #sideNavi .nav-pills{
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        position: fixed;
+    }
+
+    #sideNavi .tab-content{
+        margin-top: 5%;
+    }
+
+    .nav-pills .nav-link.active {
+        background-color: #6c757d !important;
+    }
+    #sideNavi a {
+        color: #fff !important;
+    }
+    /*Dashboard*/
+    .box {
+        width: 40vw;
+        height: 10vh;
+        margin-bottom: 10%;
+        border-radius: 49px;
+        background-color: #eee;
+    }
+    .box i {
+        float: left;
+        margin-left: 7%;
+        margin-top: 2%;
+        color: #606060;
+    }
+    .box h2 {
+        float: left;
+        margin-left: 5%;
+        margin-top: 4%;
+        color: #000;
+    }
+
+
+    /*Video Responsivity*/
+    .iframe-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%;
+        height: 0;
+    }
+    .iframe-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    /*Messeges*/
+    #Message i {
+        float: left;
+    }
+    /* Style the container with a rounded border, grey background and some padding and margin */
+    #Message .container {
+        border: 2px solid #ccc;
+        background-color: #eee;
+        border-radius: 5px;
+        padding: 16px;
+        margin: 16px 0;
+    }
+    /* Clear floats after containers */
+    #Message .container::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    /* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+    #Message .container img {
+        float: left;
+        margin-right: 20px;
+        border-radius: 50%;
+    }
+    /* Increase the font-size of a span element */
+    #Message .container span {
+        font-size: 20px;
+        margin-right: 15px;
+    }
+    /*-----FOOTER-----*/
+    footer {
+        height: 40px;
+        width: 100vw;
+        position: relative;
+        background-color: #cfd8dc;
+        text-align: center;
+        bottom: 0px;
+        margin: 0px auto;
+    }
+    .clear {
+        clear: both;
+    }
+}
+
+/*-----MOBILE-----*/
+
+@media screen and (max-width: 999px) {
+    #siteSlogan {
+        display: none;
+    }
+    #pageH1 {
+        font-size: 32px;
+        color: #d6d6d6;
+        position: relative;
+    }
+    #logo {
+        background-image: url('../images/Mobile_Header.png');
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 202px;
+        background-color: #000;
+    }
+    .popObj {
+        left: 0px;
+    }
+    .popType {
+        left: 0px;
+    }
+    .popContain {
+        padding-top: 20vh;
+    }
+    footer {
+        display: none;
+    }
+    #VirusPage #virusPic {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #VirusPage #virusPic button {
+        background-color: Transparent;
+        background-repeat: no-repeat;
+        border: none;
+        overflow: hidden;
+        outline: none;
+    }
+    #VirusPage #virusPic img {
+        height: 200px;
+        width: 200px;
+    }
+    .virImg {
+        height: 200px;
+        width: 200px;
+    }
+    #VirusPage #virusPic h3 {
+        font-size: 26px;
+        color: #d6d6d6;
+        font-family: 'Alef', sans-serif;
+        margin-bottom: 0px;
+        text-align: left;
+    }
+    #VirusPage #virusPic h6 {
+        font-size: 14px;
+        color: #fff;
+        font-family: 'Alef', sans-serif;
+        margin-bottom: 0px;
+        text-align: left;
+    }
+    #VirusPage .ratingStars {
+        display: flex;
+        color: #ffee58;
+        margin-bottom: 40px;
+    }
+    #VirusPage .content {
+        max-width: 500px;
+        padding: 30px;
+    }
+    #VirusPage iframe {
+        width: 80%;
+        height: 250px;
+    }
+    #VirusPage .submit_buttons {
+        display: flex;
+        justify-content: center;
+    }
+    .lightFlex {
+        display: flex;
+        justify-content: center;
+    }
+    .right {
+        margin-left: 40px;
+    }
+    /*Show More Button*/
+    #showMore {
+        height: 40px;
+        width: 200px;
+        background-color: #d6d6d6;
+        position: absolute;
+        margin: 20px auto;
+        text-align: center;
+    }
     /*-----FORM-----*/
     #buynow #wrapper {
         width: 85vw;
+    }
+    #textbox {
+        width: 100%;
+        border-radius: 5px;
     }
     #buynow .submit_buttons {
         display: flex;
@@ -237,168 +483,12 @@ main{
     .col-sm-10 {
         width: 75%;
     }
-    /*-----FOOTER-----*/
-    footer {
-        height: 40px;
-        width: 100vw;
-        position: relative;
-        background-color: #cfd8dc;
+    #Message .container {
         text-align: center;
-        bottom: 0px;
-        margin: 0px auto;
     }
-    .clear {
-        clear: both;
+    #Message .container img {
+        margin: auto;
+        float: none;
+        display: block;
     }
-
 }
-    /*-----MOBILE-----*/
-    @media screen and (max-width: 999px) {
-        #siteSlogan {
-            display: none;
-        }
-
-        #pageH1 {
-            font-size: 32px;
-            color: #d6d6d6;
-            position: relative;
-        }
-        #logo {
-            background-image: url('../images/Mobile_Header.png');
-            background-repeat: no-repeat;
-            width: 100%;
-            height: 202px;
-            background-color: #000;
-        }
-        .popObj {
-            left: 0px;
-        }
-        .popType {
-            left: 0px;
-        }
-        .popContain {
-            padding-top: 20vh;
-        }
-        footer {
-            display: none;
-        }
-        #VirusPage #virusPic {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        #VirusPage #virusPic button {
-            background-color: Transparent;
-            background-repeat: no-repeat;
-            border: none;
-            overflow: hidden;
-            outline: none;
-        }
-        #VirusPage #virusPic img {
-            height: 200px;
-            width: 200px;
-        }
-        .virImg {
-            height: 200px;
-            width: 200px;
-        }
-        #VirusPage #virusPic h3 {
-            font-size: 26px;
-            color: #d6d6d6;
-            font-family: 'Alef', sans-serif;
-            margin-bottom: 0px;
-            text-align: left;
-        }
-        #VirusPage #virusPic h6 {
-            font-size: 14px;
-            color: #fff;
-            font-family: 'Alef', sans-serif;
-            margin-bottom: 0px;
-            text-align: left;
-        }
-        #VirusPage .ratingStars {
-            display: flex;
-            color: #ffee58;
-            margin-bottom: 40px;
-        }
-        #VirusPage .content {
-            max-width: 500px;
-            padding: 30px;
-        }
-        #VirusPage iframe {
-            width: 80%;
-            height: 250px;
-        }
-        #VirusPage .submit_buttons {
-            display: flex;
-            justify-content: center;
-        }
-        .lightFlex {
-            display: flex;
-            justify-content: center;
-        }
-        .right {
-            margin-left: 40px;
-        }
-        /*Show More Button*/
-        #showMore {
-            height: 40px;
-            width: 200px;
-            background-color: #d6d6d6;
-            position: absolute;
-            margin: 20px auto;
-            text-align: center;
-        }
-        /*-----FORM-----*/
-        #buynow #wrapper {
-            width: 85vw;
-        }
-        
-        #textbox {
-            width: 100%;
-            border-radius: 5px;
-        }
-        #buynow .submit_buttons {
-            display: flex;
-            justify-content: space-between;
-        }
-        #buynow .submit_buttons button {
-            margin: 1vw;
-        }
-        #buynow2 .submit_buttons {
-            display: flex;
-            justify-content: flex-end;
-        }
-        #buynow2 .submit_buttons button {
-            flex-basis: 33%;
-        }
-        .con {
-            display: flex;
-            flex-direction: column;
-            border-radius: 5px;
-            background-color: #4d4d4d;
-            padding: 20px;
-            min-height: 50vh;
-        }
-        #feedback .con {
-            justify-content: center;
-            align-items: center;
-        }
-        .col-auto {
-            padding: 0;
-        }
-        #victim_info p {
-            font-weight: bold;
-        }
-        .con h1 {
-            justify-content: center;
-            align-items: center;
-        }
-        .con button {
-            justify-content: center;
-            align-items: center;
-        }
-        .col-sm-10 {
-            width: 75%;
-        }
-    }
