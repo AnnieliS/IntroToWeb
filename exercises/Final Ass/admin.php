@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Alef&display=swap" rel="stylesheet">
     <link href="includes/styles.css" rel="stylesheet">
     <title>HackerBoi</title>
+    <link rel="icon" type="image/ico" href="https://addons-content.teamspeak.com/cb11d3a7-593f-4b56-a1ea-14ca632e70ed/images/648_366/8Fcd0bji.jpg" />
+
 
 </head>
 
