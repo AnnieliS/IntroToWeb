@@ -1,6 +1,13 @@
 
 var clickSubmit = document.getElementById('stepone-done');
 
+var slider = document.getElementById("customRange1");
+var output = document.getElementById("rangePrice");
+
+slider.oninput = function() {
+    output.innerHTML = this.value;
+  }
+
 console.log(clickSubmit);
 
 clickSubmit.onclick = function () { showStepTwo();};
@@ -14,3 +21,4 @@ var stepTwoBlock = document.getElementById("stepTwo");
 console.log(stepTwoBlock);
 stepTwoBlock.classList.remove('hide');
 };
+

@@ -1,3 +1,38 @@
+<?php
+//Recieving User Data
+if (isset($_GET["submitButt"])) {
+
+  $virName = $_GET["virName"];
+  $virPrice = $_GET["price"];
+  $virDesc = $_GET["virDesc"];
+  $virType = $_GET["virType"];
+  $virPurp = $_GET["virPurp"];
+  $virPack = $_GET["virPack"];
+
+  include 'DB.php';
+  include 'urlSet.php';
+
+  // Attempt insert query execution
+  $sql = "INSERT INTO tb_virus_205 (vir_name, vir_price, vir_desc,	vir_type,	vir_act_type,vir_pack_id) VALUES ('$virName', $virPrice, '$virDesc', '$virType', '$virPurp', $virPack)";
+  if (mysqli_query($connection, $sql)) {
+      // Close connection and move to MyPage
+    mysqli_close($connection);
+    header('Location: ' . URL .'myPage.php');
+    exit();
+  } else {
+
+  // Close connection and return to home page
+  // SHOW ERROR!
+  mysqli_close($connection);
+    header("Location" . URL . "index.php");
+    exit();
+  }
+
+};
+?>
+
+
+
 <!DOCTYPE html>
 
 <html>
@@ -31,7 +66,7 @@
 
     <main>
       <div id="uploadVir">
-        <form method="post" action="#" id="#">
+        <form method="GET" action="#">
           <!-- Step 1 -->
           <!--Dragon Drop-->
 
@@ -52,18 +87,18 @@
                 <!--Virus Name-->
                 <div class="form-group">
                   <label for="exampleFormControlInput1">Virus Name</label>
-                  <input type="text" required name="" class="form-control" id="exampleFormControlInput1" placeholder="Virus1">
+                  <input type="text" required name="virName" class="form-control" id="exampleFormControlInput1" placeholder="Virus1">
                 </div>
                 <!--Virus Description-->
 
                 <div class="form-group">
                   <label for="exampleFormControlTextarea1">Description</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  <textarea class="form-control" name="virDesc" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
 
                 <!--Virus Type-->
                 <label for="exampleFormControlSelect1">Type</label>
-                <select class="form-control" id="exampleFormControlSelect1">
+                <select class="form-control" name="virType" id="exampleFormControlSelect1">
                   <option>Misc.</option>
                   <option>Trojan Horse</option>
                   <option>Worm</option>
@@ -72,7 +107,7 @@
                 </select>
 
                 <label for="exampleFormControlSelect2">Purpose</label>
-                <select class="form-control" id="exampleFormControlSelect2">
+                <select class="form-control" name="virPurp" id="exampleFormControlSelect2">
                   <option>General</option>
                   <option>Revenge</option>
                   <option>Money Making</option>
@@ -91,92 +126,100 @@
             <!--Submit Step-->
             <div class="row">
               <div class="btn btn-primary" id="stepone-done"><i class="fa fa-thumbs-down fa-3x" aria-hidden="true"></i></button>
+              </div>
             </div>
-          </div>
 
-          <!-- Step 2 -->
-
-
-          <div class="container hide" id="stepTwo">
-
-            <div class="row">
+            <!-- Step 2 -->
 
 
-              <!--Basic Pack-->
+            <div class="container hide" id="stepTwo">
 
-              <div class="col">
-                <div class="packTitle">
-                  <p>Basic</p>
+              <div class="row">
+
+
+                <!--Basic Pack-->
+
+                <div class="col">
+                  <div class="packTitle">
+                    <p>Basic</p>
+                  </div>
+                  <div class="packDesc">
+                    <p>>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>>Fusce varius metus sit amet nibh lobortis tempor. </p>
+                    <p>>Donec efficitur tellus quis venenatis finibus.</p>
+                  </div>
+                  <div class="form-check center-radio">
+                    <input class="form-check-input" type="radio" name="virPack" id="exampleRadios1" value="1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                    </label>
+                  </div>
+
                 </div>
-                <div class="packDesc">
-                  <p>>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  <p>>Fusce varius metus sit amet nibh lobortis tempor. </p>
-                  <p>>Donec efficitur tellus quis venenatis finibus.</p>
-                </div>
-                <div class="form-check center-radio">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="1" checked>
-                  <label class="form-check-label" for="exampleRadios1">
-                  </label>
+
+
+                <!--A.I Pack-->
+                <div class="col">
+                  <div class="packTitle">
+                    <p>A.I.</p>
+                  </div>
+                  <div class="packDesc">
+                    <p>>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <p>>Fusce varius metus sit amet nibh lobortis tempor. </p>
+                    <p>>Donec efficitur tellus quis venenatis finibus. </p>
+                    <p>>Phasellus eu lectus ut augue hendrerit ultrices. </p>
+                    <p>>Ut hendrerit tortor id ligula varius, nec malesuada ipsum rutrum.</p>
+                  </div>
+                  <div class="form-check center-radio">
+                    <input class="form-check-input" type="radio" name="virPack" id="exampleRadios2" value="2">
+                    <label class="form-check-label" for="exampleRadios2">
+                    </label>
+                  </div>
                 </div>
 
+                <!--Personal Pack-->
+                <div class="col">
+                  <div class="packTitle">
+                    <p>Personal</p>
+                  </div>
+                  <div class="packDesc">
+                    <p>>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <p>>Fusce varius metus sit amet nibh lobortis tempor. </p>
+                    <p>>Donec efficitur tellus quis venenatis finibus. </p>
+                    <p>>Phasellus eu lectus ut augue hendrerit ultrices. </p>
+                    <p>>Ut hendrerit tortor id ligula varius, nec malesuada ipsum rutrum. </p>
+                    <p>>Integer commodo ante ac lacus rhoncus egestas. </p>
+                    <p>>Morbi vulputate lorem sit amet massa tincidunt, in hendrerit urna euismod. </p>
+                    <p>>Aenean ut dui nec tortor gravida fringilla.</p>
+                  </div>
+                  <div class="form-check center-radio">
+                    <input class="form-check-input" type="radio" name="virPack" id="exampleRadios3" value="3">
+                    <label class="form-check-label" for="exampleRadios3">
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row range">
+
+                <div class="col-2"> <label for="customRange1">Price: <label id="rangePrice"></label> </label> </div>
+                <div class="col-10"> <input type="range" name="price" min="1" max="10000" value="500" class="custom-range" id="customRange1"></div>
               </div>
 
 
-              <!--A.I Pack-->
-              <div class="col">
-                <div class="packTitle">
-                  <p>A.I.</p>
-                </div>
-                <div class="packDesc">
-                  <p>>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                  <p>>Fusce varius metus sit amet nibh lobortis tempor. </p>
-                  <p>>Donec efficitur tellus quis venenatis finibus. </p>
-                  <p>>Phasellus eu lectus ut augue hendrerit ultrices. </p>
-                  <p>>Ut hendrerit tortor id ligula varius, nec malesuada ipsum rutrum.</p>
-                </div>
-                <div class="form-check center-radio">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="2">
-                  <label class="form-check-label" for="exampleRadios2">
-                  </label>
-                </div>
+
+
+              <!--Progress Bar 67%-->
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 66%" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+
               </div>
 
-              <!--Personal Pack-->
-              <div class="col">
-                <div class="packTitle">
-                  <p>Personal</p>
-                </div>
-                <div class="packDesc">
-                  <p>>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                  <p>>Fusce varius metus sit amet nibh lobortis tempor. </p>
-                  <p>>Donec efficitur tellus quis venenatis finibus. </p>
-                  <p>>Phasellus eu lectus ut augue hendrerit ultrices. </p>
-                  <p>>Ut hendrerit tortor id ligula varius, nec malesuada ipsum rutrum. </p>
-                  <p>>Integer commodo ante ac lacus rhoncus egestas. </p>
-                  <p>>Morbi vulputate lorem sit amet massa tincidunt, in hendrerit urna euismod. </p>
-                  <p>>Aenean ut dui nec tortor gravida fringilla.</p>
-                </div>
-                <div class="form-check center-radio">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="3">
-                  <label class="form-check-label" for="exampleRadios3">
-                  </label>
-                </div>
+              <div class="row">
+
+                <!--Submit Step-->
+
+                <button type="submit" name="submitButt" class="btn btn-primary">Submit</button>
               </div>
-
-            </div>
-
-
-            <!--Progress Bar 67%-->
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 66%" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
-
-            </div>
-
-            <div class="row">
-
-              <!--Submit Step-->
-
-              <button type="submit" class="btn btn-primary">Submit</button>
 
             </div>
         </form>
@@ -186,11 +229,11 @@
 
     <!--
 
-    <footer>
-        <h6>&copy; Not Russian Mafia</h6>
-    </footer>
+      <footer>
+          <h6>&copy; Not Russian Mafia</h6>
+      </footer>
 
--->
+  -->
 
   </div>
 
@@ -200,6 +243,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="includes/uploadSubmit.js"></script>
 </body>
+
+
 
 
 </html>

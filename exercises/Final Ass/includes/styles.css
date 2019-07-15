@@ -463,6 +463,10 @@ main {
     margin-left: 48%;
 }
 
+#uploadVir .range{
+    margin-top: 15vh;
+}
+
 .hide{
     display: none;
 }
