@@ -50,7 +50,7 @@
                     <a class="nav-link" href="RevengePage.php">Browse</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Upload</a>
+                    <a class="nav-link" href="uploadVir.php">Upload</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Sell</a>

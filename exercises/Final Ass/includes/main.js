@@ -62,6 +62,4 @@ generateVirus = function () {
 
         mainArea.appendChild(virus);
     }
-
-    letters = [];
 };

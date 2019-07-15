@@ -28,7 +28,7 @@ main {
 
 @media only screen and (min-width:1000px) {
     /*-----HEADER-----*/
-    header {
+    #fixedHead header {
         position: fixed;
         width: 100vw;
     }
@@ -39,15 +39,15 @@ main {
         width: 100vw;
         background-color: #000000;
     }
-    .navbar {
+    #fixedHead .navbar {
         position: fixed;
         z-index: 12;
     }
-    .container {
+    #fixedHead .container {
         margin-top: 4vh;
         margin-right: 2vw;
     }
-    #logo {
+    #fixedHead #logo {
         background-image: url("../images/site_logo.png");
         height: 100px;
         width: 190px;
@@ -57,7 +57,7 @@ main {
         float: left;
     }
     /*-----NAV-----*/
-    nav {
+    #fixedHead nav {
         width: 100vw;
         position: absolute;
         top: 140px;
@@ -65,7 +65,7 @@ main {
         text-align: center;
         justify-content: center;
     }
-    nav ul {
+    #fixedHead nav ul {
         display: flex;
         justify-content: center;
     }
@@ -84,6 +84,8 @@ main {
         color: #d6d6d6;
         position: relative;
     }
+
+    /*-----Index Page-----*/
     #siteSlogan {
         background-image: url("../images/Slogan.png");
         background-repeat: no-repeat;
@@ -238,17 +240,15 @@ main {
         width: 75%;
     }
     /*-----ADMIN PAGE-----*/
-    #sideNavi .nav-pills{
+    #sideNavi .nav-pills {
         position: absolute;
         top: 30%;
         left: 5%;
         position: fixed;
     }
-
-    #sideNavi .tab-content{
+    #sideNavi .tab-content {
         margin-top: 5%;
     }
-
     .nav-pills .nav-link.active {
         background-color: #6c757d !important;
     }
@@ -275,8 +275,6 @@ main {
         margin-top: 4%;
         color: #000;
     }
-
-
     /*Video Responsivity*/
     .iframe-container {
         position: relative;
@@ -333,6 +331,144 @@ main {
     .clear {
         clear: both;
     }
+}
+
+/*-----Virus Upload-----*/
+
+/*Font Colours*/
+
+#uploadVir{
+    margin: 0px auto;
+}
+
+#uploadVir label{
+    color: #fff;
+}
+
+
+
+/*Dragon Drop*/
+
+.files input {
+    outline: 2px dashed #92b0b3;
+    outline-offset: -10px;
+    transition: outline-offset .15s ease-in-out, background-color .15s linear;
+    padding: 120px 0px 85px 35%;
+    text-align: center !important;
+    margin: 0;
+    width: 100% !important;
+}
+
+.files input:focus {
+    outline: 2px dashed #92b0b3;
+    outline-offset: -10px;
+    transition: outline-offset .15s ease-in-out, background-color .15s linear;
+    border: 1px solid #92b0b3;
+}
+
+.files {
+    position: relative
+}
+
+.files:after {
+    pointer-events: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 50px;
+    right: 0;
+    height: 56px;
+    content: "";
+    background-image: url(https://image.flaticon.com/icons/png/128/109/109612.png);
+    display: block;
+    margin: 0 auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.color input {
+    background-color: #f1f1f1;
+}
+
+.files:before {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    pointer-events: none;
+    width: 100%;
+    right: 0;
+    height: 57px;
+    content: " or drag it here. ";
+    display: block;
+    margin: 0 auto;
+    color: #2ea591;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+/*Packs Box Size*/
+
+#uploadVir .packTitle {
+    height: 15vh;
+    width: 100%;
+    background-color: #eee;
+    margin-bottom: 4vh;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 300%;
+}
+
+#uploadVir .packDesc {
+    height: 75vh;
+    width: 100%;
+    background-color: #eee;
+    border-radius: 20px;
+    font-size: 75%;
+}
+
+#uploadVir .packDesc p{
+    padding-top: 3%;
+    padding-left: 5%;
+}
+
+/*Containers Margin & Box Positions*/
+
+#uploadVir .container {
+    min-height: 70vh;
+    margin-bottom: 4%;
+}
+
+.progress{
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+#uploadVir #stepone-done{
+    float: right;
+    position: relative;
+    left: 70vw;
+}
+#uploadVir button{
+    float: right;
+    position: relative;
+    left: 70vw;
+}
+
+#uploadVir .stepone{
+    padding-top: 8%;
+}
+
+#uploadVir .center-radio{
+    margin-left: 48%;
+}
+
+.hide{
+    display: none;
+}
+
+#stepTwo{
+    margin-top: 12vh;
 }
 
 /*-----MOBILE-----*/

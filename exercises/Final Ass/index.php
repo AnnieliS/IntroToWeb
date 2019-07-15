@@ -45,7 +45,7 @@
 
             <div class="popObj">
                 <h2>Popular Objective Types</h2>
-                <a href="RevengePage.html"><img src="images/Revenge_ico.png" alt="Revenge"></a>
+                <a href="RevengePage.php"><img src="images/Revenge_ico.png" alt="Revenge"></a>
                 <a href="#"><img src="images/DTO_ico.png" alt="Device Take Over"></a>
                 <a href="#"><img src="images/Money_Making_ico.png" alt="Money Making"></a>
             </div>
